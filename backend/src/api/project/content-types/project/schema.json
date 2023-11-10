@@ -35,6 +35,12 @@
       "allowedTypes": [
         "videos"
       ]
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "unique": true
     }
   }
 }

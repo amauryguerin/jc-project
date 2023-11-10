@@ -382,6 +382,12 @@ export interface ApiProjectProject extends Schema.CollectionType {
     description: Attribute.Text;
     photo: Attribute.Media;
     video: Attribute.Media;
+    slug: Attribute.String &
+      Attribute.Required &
+      Attribute.Unique &
+      Attribute.SetMinMaxLength<{
+        maxLength: 255;
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -1,5 +1,12 @@
-const Home = () => (
-    <p>home</p>
-)
+import Link from 'next/link';
 
-export default Home
+const HomePage = () => {
+    return (
+        <main>
+            <p>Home page</p>
+            <Link href="/projects">Projets</Link>
+        </main>
+    )
+}
+
+export default HomePage;

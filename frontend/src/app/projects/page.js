@@ -4,11 +4,9 @@ import getProjects from "../libs/getProjects";
 
 const ProjectsPage = async () => {
     const projects = await getProjects;
-    // console.log(projects.data[0].attributes.photo.data[0].attributes.url);
     return (
         <div>
             {projects.data.map(project => {
-                console.log(project.attributes.photo.data);
                 return (
                     <div key={project.id}>
                         <p key={project.id}>{project.attributes.name}</p>

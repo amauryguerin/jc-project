@@ -1,4 +1,6 @@
 import {Inter} from 'next/font/google'
+import SiteHeader from './components/SiteHeader'
+
 
 const inter = Inter({subsets: ['latin']})
 
@@ -11,7 +13,7 @@ const RootLayout = ({children}) => {
     return (
         <html lang="fr">
         <body className={inter.className}>
-        <header>Layout header</header>
+        <SiteHeader/>
         {children}
         <foooter>Layout footer</foooter>
         </body>

@@ -22,7 +22,6 @@ const ProjectsPage = async () => {
                                         alt="Random dog"
                                         priority
                                     />
-                                    <p>{photo.attributes.url}</p>
                                 </div>
                             )
 
@@ -34,4 +33,4 @@ const ProjectsPage = async () => {
         </div>
     )
 }
-export default ProjectsPage
+export default ProjectsPage;

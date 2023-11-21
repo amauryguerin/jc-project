@@ -4,7 +4,6 @@ import getSiteHeader from "@/app/libs/getSiteHeader";
 
 const SiteHeader = async () => {
     const siteHeader = await getSiteHeader;
-    console.log(siteHeader.data.attributes.logo);
     return (
         <header>
             <Image

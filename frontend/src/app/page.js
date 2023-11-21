@@ -5,7 +5,7 @@ const HomePage = () => {
         <div>
             <main>
                 <p>Home page</p>
-                <Link href="/projects">Projets</Link>
+                <Link href="/projects/projects">Projets</Link>
             </main>
         </div>
     )
